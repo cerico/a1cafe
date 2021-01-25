@@ -1,13 +1,5 @@
-body {
-  margin: 0
-}
-
-a { text-decoration: none; color: currentColor; padding: 8px}
-
-.linx {
-  align-items: center;
-  font-family: 'Open Sans';
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-}
+@use 'gelato/style';
+@import 'front';
+@import 'woodlands/style';
+@import 'todmorden/style';
+@import '1958/style';
