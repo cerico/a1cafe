@@ -1,0 +1,44 @@
+$gutter: 3rem;
+$gap: 4vw;
+$black: black; 
+
+.parts {
+  display: block;
+  p { font-size: 1.25rem; margin-bottom: 1em;
+  }
+  h2 { 
+    column-span: all;
+    font-size: 1.375rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  em { color: #db5439 }
+
+  .copy {
+    column-count: 1;
+    column-gap: $gutter;
+    margin-bottom: 3rem;
+  }
+    
+  .unit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $gap $gap 0;
+    border-bottom: $gap solid $black;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .parts .copy { column-count: 2; }
+}
+
+@media screen and (min-width: 1600px) {
+  .parts {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+  }
+}

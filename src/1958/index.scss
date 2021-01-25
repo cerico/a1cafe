@@ -1,4 +1,11 @@
+$gutter: 3rem;
+$gap: 4vw;
+$black: black; 
+@use 'steps';
+@use 'parts';
+@use 'offices';
+
 .detective {
-  background: var.$maybe;
-  color: var.$no;
+  text-align: justify;
+  li { width: 100%; margin: 0 }
 }

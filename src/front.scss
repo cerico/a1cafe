@@ -1,15 +1,10 @@
 @use 'variables' as var;
 
-body  {
-  margin: 0;
-}
-
 .front {
   background: var.$yes;
   color: var.$no;
+  a { padding: 8px}
 }
-
-a { text-decoration: none; color: currentColor; padding: 8px}
 
 .linx {
   align-items: center;

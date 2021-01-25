@@ -1,0 +1,32 @@
+$gutter: 3rem;
+$gap: 4vw;
+
+.steps {
+  font-style: italic;
+  text-align: left;
+  padding-right: 2em;
+  ol { display: block;}
+  p { display: flex; padding: 1rem; }
+  .copy { margin-left: 1rem; font-size: 1rem }
+  .num {
+    font-size: 8rem;
+    font-style: normal;
+    line-height: 0.8;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .steps {
+    li { width: 50%; }
+    ol { 
+      flex-wrap: wrap;
+      display: flex;
+      margin-left: -2em;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .steps { li { width: 25%;} }
+  .num { font-size: 4rem; }
+}
