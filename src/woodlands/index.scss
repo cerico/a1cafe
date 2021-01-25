@@ -1,0 +1,52 @@
+.woodlands {
+  main {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .title {
+    padding-top: 8.125rem;
+    padding-bottom: 1.5625rem;
+    line-height: 1.12;
+    font-size: 3.3125rem;
+    border-bottom: 2px solid;
+  }
+
+  .item {
+    align-items: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 2px solid;
+    display: flex;
+    font-size: 1.875rem;
+  }
+  header {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    header {
+      display: flex;
+      padding-bottom: 0.9375rem;
+      padding-top: 0.9375rem;
+      border-bottom: 2px solid;
+    }
+  }
+ p { font-size: 1.125rem; }
+ h3 { font-size: 2rem; }
+
+  a, b, body, canvas, caption, dd, dl, dt, figure, form, h1, h2, h3, h4, header, html, i, img, li, menu, nav, object, p, pre, s, span, summary, time, ul, var {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.w50 { width: 100%};
+.w35 { display: none};
+.w15 { display: none};
+
+@media (min-width:768px) {
+  .w50 { width: 50% };
+  .w35 { width: 35%; display: block };
+  .w15 { width: 15%; display: block};
+}
+
