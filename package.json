@@ -1,0 +1,23 @@
+{
+  "name": "1958.io37.cc",
+  "version": "1.0.0",
+  "description": "1958.io37.cc",
+  "main": "server.js",
+  "dependencies": {
+    "css-mqpacker": "^7.0.0",
+    "sass": "^1.26.10",
+    "sergey": "0.0.13"
+  },
+  "scripts": {
+    "dev": "sergey --watch --port=8500 --exclude=.vscode,*.conf,src",
+    "netlify": "netlify deploy --prod -d public",
+    "sass": "sass --no-source-map src/style.scss files/style.css ",
+    "mqpacker": "mqpacker -s ./files/style.css ./files/style.css",
+    "minify": "sass --no-source-map files/style.css files/style.min.css --style compressed",
+    "build": "npm run sass && npm run mqpacker && npm run minify",
+    "start": "sergey",
+    "go": "npm run dev & npm run sass"
+  },
+  "author": "gareth",
+  "license": "ISC"
+}
