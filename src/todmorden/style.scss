@@ -1,6 +1,4 @@
-@import 'variables';
-@import 'layout';
-@import 'pages';
-@import 'colors';
-@import 'buttons';
-@import 'edward';
+@use 'layout';
+@use 'pages';
+@use 'buttons';
+@use 'edward';

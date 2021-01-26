@@ -1,3 +1,5 @@
+@use 'variables';
+
 .section-left, .section-right {
   display: flex;
   position: relative;
@@ -19,6 +21,7 @@
   }
 }
 .section-left {
+  @extend %left !optional;
   min-height: 100vh;
   @media screen and (min-width: 800px) {
     position: fixed;
@@ -35,3 +38,6 @@
   position: relative;
   display: flex;
 }
+
+.odd { @extend %oddright !optional; }
+.even { @extend %evenright !optional; }

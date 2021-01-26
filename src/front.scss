@@ -1,15 +1,18 @@
 @use 'variables' as var;
 
 .front {
-  background: var.$yes;
-  color: var.$no;
+  background: var.$blue;
+  color: var.$tan;
   a { padding: 8px}
 }
 
 .linx {
   align-items: center;
-  font-family: 'Open Sans';
+  font-family: var.$primary;
   display: flex;
+  font-size: 32px;
+  font-size: 2rem;
+  font-size: 2em;
   justify-content: center;
   height: 100vh;
 }

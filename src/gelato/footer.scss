@@ -1,4 +1,7 @@
+@use 'variables';
+
 footer {
+  @extend %left !optional;
   text-align: center;
   letter-spacing: 0.09em;
 

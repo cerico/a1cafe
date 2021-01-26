@@ -1,3 +1,67 @@
-$yes: green;
-$no: yellow;
-$maybe: purple
+$blue:#7fafc5;
+$dark:#303540;
+$green: #516548;
+$parchment: #f3f7e9;
+$tan: #f8f5ef;
+$brightpink: #fc83eb;
+$brightorange: #ff7b4d;
+$peach:#fff8ee;
+
+$raleway: 'Raleway';
+$opensans: 'Open Sans';
+$roboto: 'roboto';
+$vollkorn:'vollkorn';
+$gentium: 'gentium book basic';
+$lato: 'Lato';
+$cormorant: 'Cormorant Garamond';
+$primary: $vollkorn;
+$econdary: $cormorant; 
+
+$leftpage: 50%;
+$rightpage: 50%;
+
+%blue {
+  background: $blue;
+  color: $dark;
+}
+
+%parchment {
+  background: $parchment;
+  color: $green
+}
+
+%green {
+  background: $green;
+  color: $parchment
+}
+
+%slate {
+  color: #f3f7e9;
+  background: #3b3b3b;
+}
+
+%brightpink {
+  background: $brightpink;
+  color: $peach;
+}
+
+%brightorange {
+  background: $brightorange;
+  color: $peach;
+}
+
+%peach {
+  background: $peach;
+  color: $brightorange;
+}
+
+
+%font {
+  font-family: $raleway;
+  font-family: $opensans;
+  font-family: $roboto;
+  font-family: $vollkorn;
+  font-family: $gentium;
+  font-family: $lato;
+  font-family: $cormorant;
+}

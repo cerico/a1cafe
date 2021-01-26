@@ -1,9 +1,11 @@
+@use 'variables';
+
 .booklet {
   @extend %font !optional;
   main {
     margin: 0px;
     padding: 0px;
-    @media only screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       padding: 0px 24px 24px 24px;
       margin: 0px 80px  40px 40px;
     }
@@ -20,21 +22,21 @@
 
 .tab-one {
   @extend %blue !optional;
-  @media only screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     transform: translateX(-100%);
     width: 100vw;
   }
 }
 .tab-two {
   @extend %parchment !optional;
-  @media only screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     transform: translateX(-80px);
     width: calc(100vw - 40px);
   }
 }
 .tab-three {
   @extend %green !optional;
-  @media only screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     transform: translateX(-40px);
     width: calc(100vw - 80px);
   }
@@ -42,10 +44,10 @@
 
 .overlay {
   height: 100%;
-  @media only screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .wrapper { display: flex; }
   }
-  @media only screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     position: fixed;
     top: 0;
     left: 0;
@@ -58,7 +60,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .in-view {
     transform: translateX(-100%) !important;
   }
@@ -71,13 +73,13 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 	.slide {
     transform: translateY(100%);
-    transition: $transition;
+    transition: transform .6s ease;
   }
   .in-view .slide {
     transform: none;
-		transition: $transition;
+		transition: transform .6s ease;
   }
 }

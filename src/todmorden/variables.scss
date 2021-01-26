@@ -1,18 +1,1 @@
-$blue:#7fafc5;
-$dark:#303540;
-$green: #516548;
-$tan: #f3f7e9;
-$parchment: #f8f5ef;
-
-// $primary: 'Raleway';
-$primary: 'vollkorn';
-// $primary: 'Open Sans';
-// $primary: 'gentium book basic';
-// $secondary: 'Open Sans';
-// $secondary: 'gentium book basic';
-$secondary: 'Cormorant Garamond';
-
-$transition: transform .6s ease;
-
-$leftpage: 50%;
-$rightpage: 50%;
+@use '../variables'
