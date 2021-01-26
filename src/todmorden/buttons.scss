@@ -1,0 +1,38 @@
+.button-two {
+  left: 33.3%;
+}
+
+.button-three {
+  right: 0;
+}
+
+.button {
+  position: absolute;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  width: 33.3%;
+  top: -48px;
+  background: inherit;
+  cursor: pointer;
+  span {
+    font-family: $secondary;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .button {
+    height: 100%;
+    width: 40px;
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    span {
+      transform: rotate(90deg);
+      white-space: nowrap;
+      font-size: 24px;
+    }
+  }
+}

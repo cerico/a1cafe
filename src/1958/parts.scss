@@ -4,8 +4,11 @@ $black: black;
 
 .parts {
   display: block;
-  p { font-size: 1.25rem; margin-bottom: 1em;
+  @media screen and (min-width: 1600px) {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
   }
+  p { font-size: 1.25rem; margin-bottom: 1em; }
   h2 { 
     column-span: all;
     font-size: 1.375rem;
@@ -20,6 +23,9 @@ $black: black;
     column-count: 1;
     column-gap: $gutter;
     margin-bottom: 3rem;
+    @media screen and (min-width: 600px) {
+      column-count: 2;
+    }
   }
     
   .unit {
@@ -28,17 +34,5 @@ $black: black;
     justify-content: space-between;
     padding: $gap $gap 0;
     border-bottom: $gap solid $black;
-  }
-}
-
-
-@media screen and (min-width: 600px) {
-  .parts .copy { column-count: 2; }
-}
-
-@media screen and (min-width: 1600px) {
-  .parts {
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
   }
 }

@@ -1,0 +1,39 @@
+.section-left {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  @media screen and (min-width: 800px) {
+    width: 50%;
+    position: fixed;
+  }
+}
+
+.section-right {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 800px) {
+    width: 50%;
+    margin-left: 50vw;
+  }
+}
+
+.wrapper {
+  position: relative;
+  padding-right: 3vw;
+  padding-left: 3vw;
+  margin: 0 auto;
+
+  p, h2, h3 {
+    margin: revert;
+    padding: revert;
+  }
+}
+
+.page-section {
+  position: relative;
+  display: flex;
+}

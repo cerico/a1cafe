@@ -1,0 +1,47 @@
+.sample#tufte {
+	background: #f8f5ef;
+	padding: 300px 0;
+	.text {
+		margin: 0 auto;
+		padding: 20px;
+		width: 860px;
+	}
+	h1 {
+		border-top: 5px solid #172bae;
+		color: #172bae;
+		font: 300 92px/1 'vollkorn';
+		letter-spacing: -1px;
+		margin: 0 0 0 -8px;
+		span {
+			background: #f8f5ef;
+			padding: 0 19px 0 0;
+			position: relative;
+			top: -52px;
+		}
+		span.kern {
+			background: transparent;
+			margin: 0 0 0 -5px;
+			padding: 0;
+			top: 0;
+		}
+		span.kern.push {
+			margin: 0 0 0 7px;
+		}
+	}
+	p {
+		color: #172bae;
+		font: 400 20px/30px 'vollkorn';
+		font-style: normal;
+		font-style: italic;
+		margin: -40px 0 0 300px;
+		text-indent: -16px;
+		span {
+			font-size: 28px;
+			font-family: 'gentium book basic';
+			font-weight: 400;
+			margin: 0 2px 0 0;
+			position: relative;
+			top: 5px;
+		}
+	}
+}

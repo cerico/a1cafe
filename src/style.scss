@@ -1,6 +1,7 @@
 @use 'index';
 @use '1958/style';
 
-@import 'front';
-@import 'woodlands/style';
-@import 'todmorden/style';
+@use 'front';
+@use 'woodlands/style' as w;
+@use 'todmorden/style' as t;
+@use 'gelato/style' as g;

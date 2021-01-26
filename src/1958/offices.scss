@@ -3,10 +3,17 @@ $gap: 4vw;
 
 .offices {
   padding: $gap 6.25%;
+  @media screen and (max-width: 900px) {
+    padding: $gap;
+  }
+
   dd { margin-left: 1em;}
   dl {
     column-count: 1;
     column-gap: $gap;
+    @media screen and (min-width: 600px) {
+      column-count: 2;
+    }
   }
   dt {
     margin: 1rem 0 0;
@@ -33,12 +40,4 @@ address {
     font-size: 1.875rem;
     text-transform: uppercase;
   }
-}
-
-@media screen and (min-width: 600px) {
-  .offices dl { column-count: 2; }
-}
-
-@media screen and (max-width: 900px) {
-  .offices { padding: $gap; }
 }
