@@ -1,0 +1,20 @@
+@use '../variables' as v;
+
+%emphasis {
+  color: v.$red;
+}
+
+%yellow {
+  @extend %yellow !optional;
+}
+
+%paper {
+  @extend %paper !optional;
+}
+
+%redlight {
+  @extend %redlight !optional;
+}
+%red {
+  @extend %red !optional;
+}

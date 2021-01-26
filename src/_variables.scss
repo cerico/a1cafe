@@ -6,7 +6,10 @@ $tan: #f8f5ef;
 $brightpink: #fc83eb;
 $brightorange: #ff7b4d;
 $peach:#fff8ee;
-
+$red:#db5439;
+$yellow: #eebe6d;
+$paper: #f5f3e8;
+$redlight:rgba(220, 84, 57, 0.5);
 $raleway: 'Raleway';
 $opensans: 'Open Sans';
 $roboto: 'roboto';
@@ -20,6 +23,18 @@ $econdary: $cormorant;
 $leftpage: 50%;
 $rightpage: 50%;
 
+%yellow {
+  background: $yellow;
+}
+
+%redlight {
+  background: $redlight;
+}
+
+%red {
+  background: $red;
+}
+
 %blue {
   background: $blue;
   color: $dark;
@@ -28,6 +43,10 @@ $rightpage: 50%;
 %parchment {
   background: $parchment;
   color: $green
+}
+
+%paper {
+  background: $paper;
 }
 
 %green {

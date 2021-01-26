@@ -1,11 +1,11 @@
-$gutter: 3rem;
-$gap: 4vw;
-$black: black; 
+@use 'variables';
 @use 'steps';
 @use 'parts';
+@use 'layouts';
 @use 'offices';
 
 .detective {
+  @extend %paper !optional;
   text-align: justify;
   li { width: 100%; margin: 0 }
 }

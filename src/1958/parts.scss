@@ -1,12 +1,16 @@
+@use 'variables';
+
 $gutter: 3rem;
 $gap: 4vw;
 $black: black; 
 
+.red { @extend %red !optional;}
+.redlight { @extend %redlight !optional;}
 .parts {
   display: block;
   @media screen and (min-width: 1600px) {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   p { font-size: 1.25rem; margin-bottom: 1em; }
   h2 { 

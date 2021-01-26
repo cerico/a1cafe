@@ -1,0 +1,32 @@
+@use 'variables';
+$gutter: 3rem;
+$gap: 4vw;
+
+.layouts {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  border-bottom: 32px solid black;
+  @media screen and (max-width: 1300px) {
+    display: block;
+  }
+
+  .intro, .introtwo {
+    column-count: 3;
+    column-gap: $gutter;
+    padding: $gap;
+    @media screen and (max-width: 1600px) {
+      column-count: 2;
+    }
+    @media screen and (max-width: 600px) {
+      column-count: 1;
+    }
+  }
+  .intro {
+    @extend %redlight !optional;
+    grid-column: 1 / span 11;
+  }
+  .introtwo {
+    @extend %red !optional;
+    grid-column: 6 / span 11;
+  }
+}
