@@ -6,16 +6,59 @@
   padding: 75px 0 48px
 }
 
-main.todmorden {
+.booklet main {
   margin: 0px;
   padding: 0px;
+  @media only screen and (min-width: 768px) {
+    padding: 0px 24px 24px 24px;
+    margin: 0px 80px  40px 40px;
+  }
+}
+
+.tab-one {
+  @extend .blue;
+  @media only screen and (min-width: 768px) {
+    transform: translateX(-100%);
+    width: 100vw;
+  }
+}
+.tab-two {
+  @extend .parchment;
+  @media only screen and (min-width: 768px) {
+    transform: translateX(-80px);
+    width: calc(100vw - 40px);
+  }
+}
+.tab-three {
+  @extend .green;
+  @media only screen and (min-width: 768px) {
+    transform: translateX(-40px);
+    width: calc(100vw - 80px);
+  }
+}
+
+.overlay {
+  height: 100%;
+  @media only screen and (min-width: 768px) {
+    .wrapper { display: flex; }
+  }
+  @media only screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    overflow: auto;
+    transform: none;
+    background: inherit;
+    .wrapper { flex-direction: column; }
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .in-view {
     transform: translateX(-100%) !important;
   }
-
   .tab {
     transition: transform 1s ease .1s;
     position: fixed;
@@ -23,45 +66,13 @@ main.todmorden {
     bottom: 0;
     left: 100%;
   }
-  main.todmorden {
-    padding: 0px 24px 24px 24px;
-    margin: 0px 80px  40px 40px;
-  }
-  .tab-one {
-    transform: translateX(-100%);
-    width: 100vw;
-  }
-  .tab-two {
-    transform: translateX(-80px);
-    width: calc(100vw - 40px);
-  }
-  .tab-three {
-    transform: translateX(-40px);
-    width: calc(100vw - 80px);
-  }
-  .overlay{
-    height: 100%;
-  }
 }
 
 @media only screen and (max-width: 767px) {
-
-	.overlay {
-		position: fixed;
-		top: 0;
-		left: 0;
-    bottom: 0;
-    width: 100vw;
-    overflow: auto;
-    transform: none;
-    background: inherit;
-	}
-
 	.slide {
     transform: translateY(100%);
     transition: $transition;
   }
-
   .in-view .slide {
     transform: none;
 		transition: $transition;
