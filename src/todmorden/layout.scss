@@ -1,3 +1,15 @@
+.booklet {
+  @extend %font !optional;
+  main {
+    margin: 0px;
+    padding: 0px;
+    @media only screen and (min-width: 768px) {
+      padding: 0px 24px 24px 24px;
+      margin: 0px 80px  40px 40px;
+    }
+  }
+}
+
 .tabs {
   position: fixed;
   top: 100%;
@@ -6,31 +18,22 @@
   padding: 75px 0 48px
 }
 
-.booklet main {
-  margin: 0px;
-  padding: 0px;
-  @media only screen and (min-width: 768px) {
-    padding: 0px 24px 24px 24px;
-    margin: 0px 80px  40px 40px;
-  }
-}
-
 .tab-one {
-  @extend .blue;
+  @extend %blue !optional;
   @media only screen and (min-width: 768px) {
     transform: translateX(-100%);
     width: 100vw;
   }
 }
 .tab-two {
-  @extend .parchment;
+  @extend %parchment !optional;
   @media only screen and (min-width: 768px) {
     transform: translateX(-80px);
     width: calc(100vw - 40px);
   }
 }
 .tab-three {
-  @extend .green;
+  @extend %green !optional;
   @media only screen and (min-width: 768px) {
     transform: translateX(-40px);
     width: calc(100vw - 80px);

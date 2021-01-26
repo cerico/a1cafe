@@ -1,14 +1,18 @@
-.blue {
+%blue {
   background: $blue;
   color: $dark;
 }
 
-.parchment {
+%parchment {
   background: $tan;
   color: $green
 }
 
-.green {
+%green {
   background: $green;
   color: $tan
+}
+
+%font {
+  font-family: $primary;
 }
