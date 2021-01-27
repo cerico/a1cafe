@@ -18,7 +18,7 @@
     "mqpacker": "mqpacker -s ./files/style.css ./files/style.css",
     "minify": "sass --no-source-map files/style.css files/style.min.css --style compressed",
     "build": "npm run sass && npm run mqpacker && npm run combine && npm run minify",
-    "create": "sergey",
+    "create": "sergey --exclude=.vscode,*.conf,src",
     "combine": "postcss --no-map files/style.css --use postcss-combine-duplicated-selectors --output files/style.css",
     "go": "npm run dev & npm run sass"
   },

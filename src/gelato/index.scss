@@ -1,3 +1,6 @@
+@use 'variables';
+
 .gelato {
+  @extend %font !optional;
   font-size: calc((1.5 - 1) * 1.2vw + 1rem);
 }

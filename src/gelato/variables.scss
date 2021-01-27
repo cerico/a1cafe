@@ -11,3 +11,7 @@
 %left {
   @extend %peach !optional;
 }
+
+%font {
+  @extend %fonts !optional;
+}

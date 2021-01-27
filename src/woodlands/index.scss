@@ -1,6 +1,7 @@
 @use 'variables';
 
 .woodlands {
+  @extend %font !optional;
   main {
     @extend %slate !optional;
     padding-left: 2.5rem;

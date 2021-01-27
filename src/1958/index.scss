@@ -6,6 +6,7 @@
 
 .detective {
   @extend %paper !optional;
+  @extend %font !optional;
   text-align: justify;
   li { width: 100%; margin: 0 }
 }

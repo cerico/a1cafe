@@ -1,1 +1,5 @@
-@use '../variables'
+@use '../variables';
+
+%font {
+  @extend %fonts !optional;
+}

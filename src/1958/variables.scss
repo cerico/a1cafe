@@ -18,3 +18,7 @@
 %red {
   @extend %red !optional;
 }
+
+%font {
+  font-family: v.$century;
+}

@@ -17,11 +17,21 @@ $vollkorn:'vollkorn';
 $gentium: 'gentium book basic';
 $lato: 'Lato';
 $cormorant: 'Cormorant Garamond';
+$century: 'Century Schoolbook L';
 $primary: $vollkorn;
 $econdary: $cormorant; 
 
 $leftpage: 50%;
 $rightpage: 50%;
+
+@font-face {
+  font-family: 'Century Schoolbook L';
+  src: url('CenturySchL-Roma.woff2') format('woff2'),
+       url('CenturySchL-Roma.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 %yellow {
   background: $yellow;
@@ -74,9 +84,9 @@ $rightpage: 50%;
   color: $brightorange;
 }
 
-
-%font {
+%fonts {
   font-family: $raleway;
+  font-family: $century;
   font-family: $opensans;
   font-family: $roboto;
   font-family: $vollkorn;
