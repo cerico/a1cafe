@@ -5,17 +5,19 @@
 }
 
 %blue {
-  @extend %brightpink !optional;
-  @extend %gb7 !optional;
+  // @extend %brightpink !optional;
+  // @extend %gb7 !optional;
+  @extend %cafeblue !optional;
 }
 
 %green {
-  @extend %brightorange !optional;
-  @extend %gb1 !optional;
+  // @extend %brightorange !optional;
+  // @extend %gb1 !optional;
+  @extend %cafered !optional;
 }
 
 %parchment {
-  @extend %rushmore !optional;
+  @extend %parchment !optional;
   color: v.$GrandBudapest1q7;
   // color: v.$FantasticFox1q2;
 }

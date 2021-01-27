@@ -19,10 +19,13 @@ $lato: 'Lato';
 $cormorant: 'Cormorant Garamond';
 $century: 'Century Schoolbook L';
 $primary: $vollkorn;
-$econdary: $cormorant; 
+$secondary: $cormorant; 
 
-$leftpage: 50%;
-$rightpage: 50%;
+$cafeblue: #547598;
+$cafered:#e3664a;
+
+$leftpage: 30%;
+$rightpage: 70%;
 
 @font-face {
   font-family: 'Century Schoolbook L';
@@ -48,6 +51,16 @@ $rightpage: 50%;
 %blue {
   background: $blue;
   color: $dark;
+  background: $cafeblue;
+  color: $parchment
+}
+
+%cafeblue {
+  background: $cafeblue;
+}
+
+%cafered {
+  background: $cafered;
 }
 
 %parchment {
@@ -61,6 +74,7 @@ $rightpage: 50%;
 
 %green {
   background: $green;
+  background: $cafered;
   color: $parchment
 }
 
