@@ -1,15 +1,21 @@
-@use '../variables';
+@use '../variables' as v;
 
 %oddright {
   @extend %brightpink !optional;
+  @extend %gb7 !optional;
+  @extend %fox2 !optional;
 }
 
 %evenright {
   @extend %brightorange !optional;
+  @extend %gb1 !optional;
+  @extend %gb4 !optional;
 }
 
 %left {
   @extend %peach !optional;
+  color: v.$GrandBudapest1q7;
+  // color: v.$FantasticFox1q2;
 }
 
 %font {

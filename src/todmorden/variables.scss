@@ -1,4 +1,24 @@
-@use '../variables';
+@use '../variables' as v;
+
+%font {
+  @extend %fonts !optional;
+}
+
+%blue {
+  @extend %brightpink !optional;
+  @extend %gb7 !optional;
+}
+
+%green {
+  @extend %brightorange !optional;
+  @extend %gb1 !optional;
+}
+
+%parchment {
+  @extend %rushmore !optional;
+  color: v.$GrandBudapest1q7;
+  // color: v.$FantasticFox1q2;
+}
 
 %font {
   @extend %fonts !optional;

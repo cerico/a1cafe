@@ -79,11 +79,6 @@ $rightpage: 50%;
   color: $peach;
 }
 
-%peach {
-  background: $peach;
-  color: $brightorange;
-}
-
 %fonts {
   font-family: $raleway;
   font-family: $century;
@@ -93,4 +88,81 @@ $rightpage: 50%;
   font-family: $gentium;
   font-family: $lato;
   font-family: $cormorant;
+}
+
+$FantasticFox1q0: rgb(221,141,41);
+$FantasticFox1q1: rgb(226,210,0);
+$FantasticFox1q2: rgb(70,172,200);
+$FantasticFox1q3: rgb(229,134,1);
+$FantasticFox1q4: rgb(180,15,32);
+$GrandBudapest1q0: rgb(241,187,123);
+$GrandBudapest1q1: rgb(253,100,103);
+$GrandBudapest1q2: rgb(91,26,24);
+$GrandBudapest1q3: rgb(214,114,54);
+$GrandBudapest1q4: rgb(230,160,196);
+$GrandBudapest1q5: rgb(198,205,247);
+$GrandBudapest1q6: rgb(216,164,153);
+$GrandBudapest1q7: rgb(114,148,212);
+$Rushmore:#fbf0ff;;
+
+%peach {
+  background: $peach;
+  color: $brightorange;
+  color: $FantasticFox1q2;
+}
+
+%fox0 {
+  background: $FantasticFox1q0;
+}
+
+%rushmore {
+  background: $Rushmore;
+}
+
+%fox1 {
+  background: $FantasticFox1q1;
+}
+
+%fox2 {
+  background: $FantasticFox1q2;
+}
+
+%fox3 {
+  background: $FantasticFox1q3;
+}
+
+%fox4 {
+  background: $FantasticFox1q4;
+}
+
+%gb0 {
+  background: $GrandBudapest1q0;
+}
+
+%gb1 {
+  background: $GrandBudapest1q1;
+}
+
+%gb2 {
+  background: $GrandBudapest1q2;
+}
+
+%gb3 {
+  background: $GrandBudapest1q3;
+}
+
+%gb4 {
+  background: $GrandBudapest1q4;
+}
+
+%gb5 {
+  background: $GrandBudapest1q5;
+}
+
+%gb6 {
+  background: $GrandBudapest1q6;
+}
+
+%gb7 {
+  background: $GrandBudapest1q7;
 }
