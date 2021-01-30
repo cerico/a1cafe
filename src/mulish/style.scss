@@ -1,0 +1,20 @@
+@use '../variables';
+
+.mulish {
+  @extend %fonts !optional;
+  padding: 1rem;
+  padding-top: 1.6rem;
+  margin: auto;
+  position: relative;
+  margin-top: -0.3rem;
+  font-size: 1.5rem;
+  line-height: 1.7em;
+}
+
+@media only screen and (min-width: 600px) {
+
+  .mulish {
+    font-size: 1.275rem;
+    width: 20em;
+  }
+}
