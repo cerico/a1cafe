@@ -39,4 +39,4 @@ const images = [
     }
   };
 
-  document.addEventListener('scroll', handleScroll);
+  document.getElementById('madrid').addEventListener('scroll', handleScroll);
