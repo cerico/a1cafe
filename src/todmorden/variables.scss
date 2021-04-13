@@ -4,9 +4,20 @@
   @extend %fonts !optional;
 }
 
+.booklet {
+  --peach: #fff8ee;
+  --red: #{v.$cafered};
+  --yellow: #eebe6d;
+  --light: #{v.$yellow};
+  --blue: #{v.$cafeblue};
+  --parchment: #{v.$parchment};
+  --buda: #{v.$GrandBudapest1q7};
+}
+
 %blue {
   // @extend %brightpink !optional;
   // @extend %gb7 !optional;
+
   @extend %cafeblue !optional;
 }
 

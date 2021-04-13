@@ -1,6 +1,10 @@
 @use 'variables';
 
 .booklet {
+  %white-on-blue {
+    background: var(--blue);
+    color: var(--parchment);
+  }
   @extend %font !optional;
   main {
     margin: 0px;
@@ -21,7 +25,7 @@
 }
 
 .tab-one {
-  @extend %blue !optional;
+  @extend %white-on-blue !optional;
   @media screen and (min-width: 768px) {
     transform: translateX(-100%);
     width: 100vw;
