@@ -1,0 +1,113 @@
+#madrid {
+    background: #f3f7e9 !important;
+    overflow: scroll;
+
+main {
+    padding: 0 1.25rem 8rem;
+    color: #333;
+    background: #f3f7e9 !important;
+    background-color: #f3f7e9;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 2rem;
+    column-gap: 2rem;
+    position: relative;
+}
+
+@media (min-width: 700px) {
+    .stories-grid {
+        grid-template-columns: 8fr 5fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .left {
+        position: sticky;
+        inset: 0px;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+    }
+    .sticky-container {
+        position: relative;
+        z-index: 10;
+    }
+    .main-narrative {
+        position: relative;
+        margin-top: -224px;
+        z-index: 150 !important;
+    }   
+    .first-paragraph {
+        padding-top: 20vh;
+    }
+    .mobile-text {
+        position: relative;
+        padding: 41vh 0px;
+    } 
+    .mobile-text p {
+        background-color: rgb(243, 247, 233);
+    }
+}
+
+.story-heading {
+    grid-column: 1 / -1;
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.sticky-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    min-height: 80vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.photo-container {
+    width: 100%;
+    height: 60vh;
+    -webkit-transition: opacity 0.6s ease;
+    transition: opacity 0.6s ease;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 450;
+}
+
+img {
+    width: 100%;
+}
+
+.text-block {
+    @media (min-width: 700px) {
+        padding: 1rem;
+    }
+}
+
+.yola {
+    min-height: 50vh;
+    position: relative;
+    padding-bottom: 10vh;
+}
+
+.sticky-text {
+    top: 10vh;
+    border: 0px solid #547598;
+}
+
+}

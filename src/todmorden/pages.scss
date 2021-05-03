@@ -1,7 +1,7 @@
 @use 'variables';
 
-$leftpage: 50%;
-$rightpage: 50%;
+$leftpage: 30%;
+$rightpage: 70%;
 
 .h2 {
 	width: 100%;
@@ -27,7 +27,7 @@ $rightpage: 50%;
 
 .scrolling-right {
 	height: 100%;
-	position: relative;
+	position: fixed;
 	width: 50%;
 	padding: 0;
 	border-left: 1px solid;
@@ -58,7 +58,7 @@ $rightpage: 50%;
 	  padding: 0 40px;
   }
   .text {
-	  max-width: 600px;
+	  max-width: 680px;
 	  margin-top: 104px;
 	  margin-right: 0;
   }
